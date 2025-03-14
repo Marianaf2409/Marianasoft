@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipos de Uñas - Elegance Nails Spa</title>
+  <style>
+    /* Estilos generales del cuerpo de la página */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+      background-color:rgb(221, 91, 221); /* Morado */
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between; /* Esto distribuirá los elementos a los extremos */
+      align-items: center;
+    }
+
+    /* Estilos para los enlaces del encabezado */
+    header a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      background-color:rgb(221, 91, 221);
+      padding: 15px; /* Tamaño del círculo */
+      border-radius: 50%; /* Esto hace que sea un círculo */
+      width: 120px; /* Ancho del círculo */
+      height: 120px; /* Altura del círculo */
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Centra el texto dentro del círculo */
+      text-align: center;
+      transition: background-color 0.3s; /* Transición para el cambio de color */
+    }
+
+    /* Cambio de color al pasar el ratón por encima */
+    header a:hover {
+      background-color:rgb(105, 16, 76); /* Cambia el color cuando se pasa el mouse */
+    }
+
+    /* Estilos para el título principal */
+    h1 {
+      margin: 0;
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para el contenido principal */
+    }
+
+    /* Estilos para los títulos de las secciones */
+    h2 {
+      font-size: 28px;
+      color: rgb(221, 91, 221);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para la lista de tipos de uñas */
+    .nail-list {
+      display: flex;
+      flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+      justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+    }
+
+    /* Estilos para cada tipo de uña en la lista */
+    .nail-item {
+      background-color: #f9f9f9;
+      border: 2px solid rgb(221, 91, 221);
+      padding: 20px;
+      width: 250px;
+      margin: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para cada elemento */
+    }
+
+    /* Estilos para las imágenes de las uñas */
+    .nail-item img {
+      width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+      height: auto;
+      border-radius: 8px; /* Bordes redondeados para las imágenes */
+    }
+
+    /* Estilos para los títulos de cada tipo de uña */
+    .nail-item h3 {
+      font-size: 22px;
+      color: rgb(221, 91, 221); /* Color morado */
+    }
+
+    /* Estilos para los precios */
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    /* Estilos para la barra de navegación */
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Encabezado con el nombre del spa, descripción y botones para agendar citas y volver al inicio -->
+<header>
+    <h1>Elegance Nails Spa</h1>
+    <p>Conoce nuestros servicios de uñas</p>
+    <!-- Enlace para agendar citas -->
+    <a href="formulariocitas.html">AGENDAR CITAS</a>
+    <!-- Enlace para volver al inicio -->
+    <a href="menu.html">Volver al Inicio</a> 
+</header>
+
+<!-- Contenido principal de la página, con diferentes tipos de uñas -->
+<main>
+    <h2>Tipos de Uñas y Precios</h2>
+    <div class="nail-list">
+        <!-- Uña Semipermanente -->
+        <div class="nail-item">
+            <img src="semipermante.jpg" alt="Uñas Semipermanentes">
+            <h3>Uñas Semipermanentes</h3>
+            <p>Duración: 2-3 semanas</p>
+            <p>Diseño personalizado o colores clásicos.</p>
+            <p class="price">$25.00</p>
+        </div>
+
+        <!-- Uñas Acrílicas -->
+        <div class="nail-item">
+            <img src="uñas con diseño.jpg" alt="Uñas Acrílicas">
+            <h3>Uñas Acrílicas</h3>
+            <p>Duración: 3-4 semanas</p>
+            <p>Diseños elaborados y resistentes.</p>
+            <p class="price">$30.00</p>
+        </div>
+
+        <!-- Uñas de Gel -->
+        <div class="nail-item">
+            <img src="uñas en gel.jpg" alt="Uñas de Gel">
+            <h3>Uñas de Gel</h3>
+            <p>Duración: 2-3 semanas</p>
+            <p>Un acabado brillante y natural.</p>
+            <p class="price">$35.00</p>
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>

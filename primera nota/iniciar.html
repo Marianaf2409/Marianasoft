@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <!-- Meta etiquetas para codificación y vista responsiva -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Iniciar Sesión</title>
+   <style>
+     /* Estilos generales para el cuerpo de la página */
+     body {
+       font-family: 'Arial', sans-serif;
+       background-color: #f3f3f3;
+       margin: 0;
+       padding: 0;
+     }
+     /* Estilos para el encabezado */
+     header {
+       background-color: rgb(199, 94, 199); /* Color de fondo */
+       color: white; /* Color del texto */
+       padding: 15px 20px; /* Espaciado interior */
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del encabezado */
+     }
+     /* Estilos para el logo del encabezado */
+     header .logo {
+       font-size: 24px;
+       font-weight: bold;
+     }
+     /* Estilos para el menú de navegación */
+     nav {
+       display: flex;
+     }
+     nav a {
+       color: white;
+       text-decoration: none;
+       margin-left: 25px;
+       font-size: 16px;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+     }
+     nav a:hover {
+       text-decoration: underline; /* Subraya al pasar el mouse */
+     }
+     /* Estilos para el formulario */
+     form {
+       background-color: white; /* Fondo blanco para el formulario */
+       padding: 40px; /* Espaciado interior */
+       border-radius: 8px; /* Bordes redondeados */
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor del formulario */
+       width: 300px; /* Ancho del formulario */
+       text-align: center;
+       margin: 20px auto; /* Centrado automático */
+     }
+     /* Estilos para el título dentro del formulario */
+     h2 {
+       color: rgb(221, 91, 221); /* Color morado */
+       font-size: 32px;
+       margin-bottom: 20px;
+     }
+     /* Estilos para los campos de texto y contraseña */
+     input[type="text"],
+     input[type="password"] {
+       width: 100%; /* Ancho completo */
+       padding: 12px; /* Espaciado interior */
+       margin: 10px 0; /* Espaciado superior e inferior */
+       border: 2px solid rgb(221, 91, 221); /* Borde morado */
+       border-radius: 4px; /* Bordes redondeados */
+       font-size: 16px;
+       box-sizing: border-box; /* Incluye el padding en el tamaño total */
+     }
+     /* Estilos para el botón de envío */
+     input[type="submit"] {
+       width: 100%;
+       padding: 12px;
+       background-color: rgb(221, 91, 221); /* Botón morado */
+       border: none;
+       border-radius: 4px;
+       color: white;
+       font-size: 18px;
+       cursor: pointer;
+       transition: background-color 0.3s; /* Efecto de transición al pasar el mouse */
+     }
+     input[type="submit"]:hover {
+       background-color: rgb(221, 91, 221); /* Color de hover para el botón */
+     }
+     /* Estilos para el contenedor del formulario */
+     .form-container {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+     /* Estilos para las etiquetas del formulario */
+     label {
+       font-size: 18px;
+       color: #555;
+       text-align: left;
+       width: 100%;
+     }
+   </style>
+</head>
+<body>
+   <!-- Encabezado con el nombre del spa y menú de navegación -->
+   <header>
+     <div class="logo">Elegance Nails Spa</div>
+     <nav>
+       <a href="#inicio">inicio de sesión</a> <!-- Enlace al inicio de sesión -->
+     </nav>
+   </header>
+
+   <!-- Formulario para iniciar sesión -->
+   <form action="paginaprincipal.html" method="POST">
+     <div class="form-container">
+       <h2>Iniciar sesión</h2>
+       <!-- Campo para el nombre -->
+       <label for="Nombre">Nombre:</label>
+       <input type="text" name="Nombre" id="Nombre" required><br>
+
+       <!-- Campo para el apellido -->
+       <label for="Apellidos">Apellido:</label>
+       <input type="text" name="Apellidos" id="Apellidos" required><br>
+
+       <!-- Campo para la contraseña -->
+       <label for="password">Contraseña:</label>
+       <input type="password" name="password" id="password" required placeholder="********"><br>
+
+       <!-- Botón de inicio de sesión -->
+       <a href="paginaprincipal.html" class="button">Iniciar sesión</a> <!-- Redirige al hacer clic -->
+     </div>
+   </form>
+</body>
+</html>
